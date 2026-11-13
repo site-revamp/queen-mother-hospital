@@ -1,0 +1,2435 @@
+
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Royal Veterinary College | Science, Education & Animal Care</title>
+
+  <meta name="description" content="Discover the Royal Veterinary College, a leading veterinary and biological sciences institution offering veterinary education, animal healthcare and world-class research.">
+
+  <meta name="theme-color" content="#7F3F98">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.rvc.ac.uk/">
+
+  <meta property="og:title" content="Royal Veterinary College | The Science of Life">
+  <meta property="og:description" content="Explore veterinary education, specialist animal healthcare and scientific research at the Royal Veterinary College.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.rvc.ac.uk/">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://images.unsplash.com">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Literata:opsz,wght@7..72,400;7..72,500;7..72,600;7..72,700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --color-primary: #7F3F98;
+      --color-primary-dark: #542568;
+      --color-primary-light: #A978BA;
+
+      --color-secondary: #4B4B4B;
+      --color-secondary-dark: #303030;
+      --color-secondary-light: #777777;
+
+      --color-accent: #D6B5E1;
+
+      --color-heading: #29232D;
+      --color-text: #4B4B4B;
+      --color-muted: #716B74;
+
+      --color-background: #FFFFFF;
+      --color-background-alt: #F7F4F8;
+
+      --color-surface: #FFFFFF;
+      --color-surface-alt: #EFE8F2;
+
+      --color-border: #E4DCE8;
+      --color-border-strong: #BDA9C6;
+
+      --color-interactive: #7F3F98;
+      --color-hover: #642F7B;
+      --color-focus: #A978BA;
+
+      --font-heading: "Literata", Georgia, serif;
+      --font-body: "Inter", Arial, sans-serif;
+
+      --container: 1300px;
+      --section-space: 105px;
+      --radius: 8px;
+      --shadow: 0 20px 60px rgba(48, 30, 55, .12);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 100px;
+    }
+
+    body {
+      font-family: var(--font-body);
+      color: var(--color-text);
+      background: var(--color-background);
+      line-height: 1.65;
+      overflow-x: hidden;
+    }
+
+    body.menu-open {
+      overflow: hidden;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button {
+      font: inherit;
+    }
+
+    button, a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    a:focus-visible,
+    button:focus-visible {
+      outline: 3px solid var(--color-focus);
+      outline-offset: 4px;
+    }
+
+    .container {
+      width: min(var(--container), calc(100% - 40px));
+      margin-inline: auto;
+    }
+
+    .section {
+      padding-block: var(--section-space);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--color-primary);
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: .13em;
+      text-transform: uppercase;
+      margin-bottom: 19px;
+    }
+
+    .eyebrow::before {
+      content: "";
+      width: 30px;
+      height: 2px;
+      background: var(--color-primary);
+    }
+
+    h1, h2, h3, h4 {
+      font-family: var(--font-heading);
+      color: var(--color-heading);
+      font-weight: 500;
+      line-height: 1.13;
+    }
+
+    h1 {
+      font-size: clamp(44px, 6.3vw, 78px);
+      letter-spacing: -.045em;
+    }
+
+    h2 {
+      font-size: clamp(36px, 4.5vw, 55px);
+      letter-spacing: -.035em;
+    }
+
+    h3 {
+      font-size: clamp(25px, 2.5vw, 32px);
+    }
+
+    p {
+      font-size: 17px;
+    }
+
+    .lead {
+      font-size: 19px;
+      line-height: 1.75;
+      max-width: 660px;
+    }
+
+    .section-intro {
+      max-width: 730px;
+      margin-bottom: 48px;
+    }
+
+    .section-intro p {
+      margin-top: 20px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      min-height: 54px;
+      padding: 13px 23px;
+      border: 1px solid transparent;
+      border-radius: 4px;
+      font-size: 16px;
+      font-weight: 700;
+      transition: .25s ease;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: var(--color-primary);
+      color: #fff;
+    }
+
+    .btn-primary:hover {
+      background: var(--color-hover);
+      transform: translateY(-2px);
+    }
+
+    .btn-light {
+      background: #fff;
+      color: var(--color-primary-dark);
+    }
+
+    .btn-light:hover {
+      background: var(--color-surface-alt);
+      transform: translateY(-2px);
+    }
+
+    .btn-outline {
+      border-color: var(--color-border-strong);
+      color: var(--color-primary-dark);
+      background: transparent;
+    }
+
+    .btn-outline:hover {
+      border-color: var(--color-primary);
+      background: var(--color-background-alt);
+    }
+
+    .text-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--color-primary);
+      font-weight: 700;
+      font-size: 16px;
+      margin-top: 21px;
+      transition: gap .2s;
+    }
+
+    .text-link:hover {
+      gap: 18px;
+    }
+
+    /* Announcement */
+
+    .topbar {
+      background: var(--color-primary-dark);
+      color: #fff;
+      font-size: 15px;
+    }
+
+    .topbar-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 40px;
+      gap: 15px;
+    }
+
+    .topbar a {
+      color: #fff;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    /* Header */
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255,255,255,.97);
+      backdrop-filter: blur(15px);
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .header-inner {
+      min-height: 88px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 25px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      flex-shrink: 0;
+    }
+
+    .brand-symbol {
+      width: 49px;
+      height: 49px;
+      border: 2px solid var(--color-primary);
+      border-radius: 50%;
+      display: grid;
+      place-items: center;
+      color: var(--color-primary);
+      font-family: var(--font-heading);
+      font-size: 29px;
+      font-weight: 600;
+    }
+
+    .brand-name {
+      font-family: var(--font-heading);
+      color: var(--color-primary-dark);
+      font-size: 19px;
+      line-height: 1.15;
+      font-weight: 600;
+    }
+
+    .brand-name small {
+      display: block;
+      font-family: var(--font-body);
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: .08em;
+      margin-top: 5px;
+      text-transform: uppercase;
+    }
+
+    .desktop-nav {
+      display: flex;
+      align-items: center;
+      gap: clamp(15px, 2.1vw, 29px);
+    }
+
+    .desktop-nav a {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--color-secondary);
+      transition: color .2s;
+    }
+
+    .desktop-nav a:hover {
+      color: var(--color-primary);
+    }
+
+    .header-cta {
+      white-space: nowrap;
+      min-height: 47px;
+      padding-inline: 17px;
+    }
+
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: 0;
+      color: var(--color-primary-dark);
+      font-size: 27px;
+      cursor: pointer;
+      width: 48px;
+      height: 48px;
+    }
+
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      inset: 128px 0 0;
+      background: white;
+      z-index: 999;
+      padding: 30px 25px 120px;
+      overflow-y: auto;
+    }
+
+    .mobile-menu.active {
+      display: block;
+    }
+
+    .mobile-menu a {
+      display: block;
+      padding: 17px 0;
+      font-size: 19px;
+      font-weight: 600;
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    /* Hero */
+
+    .hero {
+      min-height: 650px;
+      position: relative;
+      isolation: isolate;
+      display: flex;
+      align-items: center;
+      background: var(--color-primary-dark);
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+      background:
+        linear-gradient(90deg,
+          rgba(43, 20, 55, .96) 0%,
+          rgba(65, 30, 78, .88) 42%,
+          rgba(50, 28, 55, .30) 100%),
+        url("https://images.unsplash.com/photo-1576201836106-db1758fd1c97?auto=format&fit=crop&w=2000&q=85") center 42% / cover;
+    }
+
+    .hero::after {
+      content: "RVC";
+      position: absolute;
+      right: -35px;
+      bottom: -110px;
+      z-index: -1;
+      color: rgba(255,255,255,.055);
+      font-family: var(--font-heading);
+      font-size: clamp(200px, 34vw, 480px);
+      line-height: 1;
+      font-weight: 700;
+      pointer-events: none;
+    }
+
+    .hero-content {
+      max-width: 790px;
+      padding-block: 100px;
+      color: #fff;
+    }
+
+    .hero .eyebrow {
+      color: #E8D8ED;
+    }
+
+    .hero .eyebrow::before {
+      background: var(--color-primary-light);
+    }
+
+    .hero h1 {
+      color: #fff;
+      max-width: 790px;
+    }
+
+    .hero h1 em {
+      color: #E6C9EF;
+      font-style: normal;
+    }
+
+    .hero-copy {
+      color: #F4EDF6;
+      font-size: 19px;
+      max-width: 620px;
+      margin-top: 25px;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 35px;
+    }
+
+    .hero-note {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      color: #F4EDF6;
+      font-size: 15px;
+      margin-top: 47px;
+    }
+
+    .hero-note span {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #D6B5E1;
+    }
+
+    /* Audience pathways */
+
+    .pathways {
+      position: relative;
+      margin-top: -1px;
+      background: var(--color-background-alt);
+      padding-block: 75px;
+    }
+
+    .pathways-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 30px;
+      margin-bottom: 35px;
+    }
+
+    .pathways-heading h2 {
+      max-width: 550px;
+      font-size: clamp(32px, 3.5vw, 43px);
+    }
+
+    .pathways-heading p {
+      max-width: 390px;
+    }
+
+    .pathways-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .pathway {
+      position: relative;
+      min-height: 235px;
+      padding: 27px 23px;
+      background: white;
+      border-bottom: 3px solid transparent;
+      transition: .3s ease;
+    }
+
+    .pathway:hover {
+      border-color: var(--color-primary);
+      transform: translateY(-6px);
+      box-shadow: var(--shadow);
+    }
+
+    .pathway-number {
+      font-family: var(--font-heading);
+      font-size: 38px;
+      color: var(--color-primary-light);
+      line-height: 1;
+      margin-bottom: 22px;
+    }
+
+    .pathway h3 {
+      font-size: 25px;
+      margin-bottom: 12px;
+    }
+
+    .pathway p {
+      font-size: 16px;
+      color: var(--color-muted);
+    }
+
+    .pathway-arrow {
+      display: inline-block;
+      margin-top: 17px;
+      color: var(--color-primary);
+      font-size: 22px;
+    }
+
+    /* Education */
+
+    .education-layout {
+      display: grid;
+      grid-template-columns: 1fr 1.05fr;
+      gap: 75px;
+      align-items: center;
+    }
+
+    .education-visual {
+      min-height: 560px;
+      position: relative;
+    }
+
+    .education-main-image {
+      position: absolute;
+      inset: 0 60px 60px 0;
+      overflow: hidden;
+      border-radius: 3px;
+    }
+
+    .education-main-image img {
+      transition: transform .7s ease;
+    }
+
+    .education-main-image:hover img {
+      transform: scale(1.04);
+    }
+
+    .education-accent {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 53%;
+      background: var(--color-primary);
+      color: white;
+      padding: 31px;
+      box-shadow: var(--shadow);
+    }
+
+    .education-accent strong {
+      display: block;
+      font-family: var(--font-heading);
+      font-size: 44px;
+      font-weight: 500;
+    }
+
+    .education-accent span {
+      font-size: 16px;
+    }
+
+    .education-copy h2 {
+      margin-bottom: 23px;
+    }
+
+    .education-copy > p {
+      margin-bottom: 20px;
+    }
+
+    .education-list {
+      list-style: none;
+      margin: 28px 0;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 13px;
+    }
+
+    .education-list li {
+      font-size: 16px;
+      padding-left: 17px;
+      position: relative;
+    }
+
+    .education-list li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 11px;
+      width: 6px;
+      height: 6px;
+      background: var(--color-primary);
+      border-radius: 50%;
+    }
+
+    /* Clinical feature */
+
+    .clinical {
+      background: var(--color-primary-dark);
+      color: white;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .clinical::before {
+      content: "CARE";
+      position: absolute;
+      left: -40px;
+      bottom: -130px;
+      color: rgba(255,255,255,.045);
+      font-family: var(--font-heading);
+      font-size: clamp(180px, 30vw, 390px);
+      line-height: 1;
+      font-weight: 700;
+      pointer-events: none;
+    }
+
+    .clinical .eyebrow {
+      color: #E8D8ED;
+    }
+
+    .clinical .eyebrow::before {
+      background: #D6B5E1;
+    }
+
+    .clinical h2,
+    .clinical h3 {
+      color: #fff;
+    }
+
+    .clinical .section-intro p {
+      color: #E9DDEB;
+    }
+
+    .clinical-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 30px;
+      position: relative;
+    }
+
+    .clinical-top .section-intro {
+      margin-bottom: 0;
+    }
+
+    .clinical-top .btn {
+      flex-shrink: 0;
+      margin-bottom: 48px;
+    }
+
+    .clinical-grid {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr .85fr;
+      gap: 20px;
+      margin-top: 55px;
+      position: relative;
+    }
+
+    .clinical-item {
+      min-height: 405px;
+      display: flex;
+      flex-direction: column;
+      justify-content: end;
+      padding: 29px;
+      position: relative;
+      overflow: hidden;
+      isolation: isolate;
+    }
+
+    .clinical-item::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+      background-size: cover;
+      background-position: center;
+      transition: transform .6s ease;
+    }
+
+    .clinical-item:hover::before {
+      transform: scale(1.06);
+    }
+
+    .clinical-item::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      background: linear-gradient(0deg, rgba(27,16,32,.94), rgba(27,16,32,.05) 80%);
+    }
+
+    .clinical-item:nth-child(1)::before {
+      background-image: url("https://images.unsplash.com/photo-1628009368231-7bb7cfcb0def?auto=format&fit=crop&w=1000&q=85");
+    }
+
+    .clinical-item:nth-child(2)::before {
+      background-image: url("https://images.unsplash.com/photo-1530281700549-e82e7bf110d6?auto=format&fit=crop&w=900&q=85");
+    }
+
+    .clinical-item:nth-child(3)::before {
+      background-image: url("https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?auto=format&fit=crop&w=900&q=85");
+    }
+
+    .clinical-item span {
+      font-size: 15px;
+      color: #E8D8ED;
+      margin-bottom: 10px;
+    }
+
+    .clinical-item h3 {
+      font-size: 28px;
+      margin-bottom: 12px;
+    }
+
+    .clinical-item p {
+      color: #F4EDF6;
+      font-size: 16px;
+    }
+
+    .clinical-item a {
+      display: inline-flex;
+      width: fit-content;
+      margin-top: 20px;
+      font-weight: 700;
+      color: #fff;
+      border-bottom: 1px solid #D6B5E1;
+      padding-bottom: 4px;
+    }
+
+    /* Audience routes */
+
+    .routes {
+      background: #F7F4F8;
+    }
+
+    .routes-layout {
+      display: grid;
+      grid-template-columns: .9fr 1.1fr;
+      gap: 75px;
+      align-items: center;
+    }
+
+    .routes-copy h2 {
+      margin-bottom: 22px;
+    }
+
+    .routes-copy p {
+      margin-bottom: 18px;
+    }
+
+    .route-list {
+      border-top: 1px solid var(--color-border-strong);
+    }
+
+    .route-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      padding: 22px 0;
+      border-bottom: 1px solid var(--color-border-strong);
+      transition: padding .2s;
+    }
+
+    .route-row:hover {
+      padding-inline: 10px;
+    }
+
+    .route-row strong {
+      display: block;
+      font-family: var(--font-heading);
+      font-size: 24px;
+      font-weight: 500;
+      color: var(--color-heading);
+    }
+
+    .route-row span {
+      font-size: 15px;
+      color: var(--color-muted);
+    }
+
+    .route-row b {
+      color: var(--color-primary);
+      font-size: 25px;
+    }
+
+    .routes-visual {
+      min-height: 560px;
+      position: relative;
+    }
+
+    .routes-visual img {
+      position: absolute;
+      inset: 0 0 50px 45px;
+      width: calc(100% - 45px);
+      height: calc(100% - 50px);
+      object-fit: cover;
+    }
+
+    .routes-note {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 55%;
+      padding: 27px;
+      background: var(--color-primary);
+      color: white;
+    }
+
+    .routes-note strong {
+      font-family: var(--font-heading);
+      font-size: 26px;
+      font-weight: 500;
+      display: block;
+    }
+
+    .routes-note p {
+      font-size: 15px;
+      margin-top: 8px;
+    }
+
+    /* Research */
+
+    .research {
+      background: #fff;
+    }
+
+    .research-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 65px;
+      align-items: center;
+    }
+
+    .research-image {
+      height: 530px;
+      position: relative;
+    }
+
+    .research-image img {
+      object-position: center;
+    }
+
+    .research-stamp {
+      position: absolute;
+      right: -25px;
+      bottom: 35px;
+      width: 170px;
+      height: 170px;
+      background: var(--color-primary);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      border-radius: 50%;
+      border: 7px solid white;
+    }
+
+    .research-stamp strong {
+      font-family: var(--font-heading);
+      font-size: 43px;
+      font-weight: 500;
+      line-height: 1.1;
+    }
+
+    .research-stamp span {
+      font-size: 14px;
+    }
+
+    .research-copy h2 {
+      margin-bottom: 22px;
+    }
+
+    .research-copy p {
+      margin-bottom: 20px;
+    }
+
+    .research-topics {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin: 26px 0;
+    }
+
+    .research-topics span {
+      border: 1px solid var(--color-border-strong);
+      color: var(--color-primary-dark);
+      padding: 9px 13px;
+      font-size: 15px;
+    }
+
+    /* Six icon section */
+
+    .capabilities {
+      background: var(--color-background-alt);
+    }
+
+    .capabilities .section-intro {
+      text-align: center;
+      margin-inline: auto;
+    }
+
+    .capabilities .eyebrow {
+      justify-content: center;
+    }
+
+    .icon-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      column-gap: 45px;
+      row-gap: 48px;
+    }
+
+    .icon-item {
+      padding: 23px 12px;
+      position: relative;
+      border-bottom: 1px solid var(--color-border-strong);
+    }
+
+    .icon-visual {
+      width: 76px;
+      height: 76px;
+      background: #EDE2F1;
+      color: var(--color-primary);
+      display: grid;
+      place-items: center;
+      margin-bottom: 21px;
+      border-radius: 50%;
+      transition: .3s ease;
+    }
+
+    .icon-item:hover .icon-visual {
+      background: var(--color-primary);
+      color: white;
+      transform: rotate(-6deg) scale(1.07);
+    }
+
+    .icon-visual svg {
+      width: 39px;
+      height: 39px;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 1.7;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+    }
+
+    .icon-item h3 {
+      font-size: 25px;
+      margin-bottom: 10px;
+    }
+
+    .icon-item p {
+      font-size: 16px;
+      color: var(--color-muted);
+    }
+
+    /* History */
+
+    .heritage {
+      background: var(--color-primary-dark);
+      color: white;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .heritage h2 {
+      color: white;
+      max-width: 800px;
+    }
+
+    .heritage .eyebrow {
+      color: #E8D8ED;
+    }
+
+    .heritage .eyebrow::before {
+      background: #D6B5E1;
+    }
+
+    .heritage-lead {
+      color: #E9DDEB;
+      max-width: 670px;
+      margin-top: 23px;
+    }
+
+    .heritage-bottom {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 35px;
+      margin-top: 60px;
+      padding-top: 35px;
+      border-top: 1px solid rgba(255,255,255,.3);
+    }
+
+    .heritage-year {
+      font-family: var(--font-heading);
+      font-size: clamp(80px, 15vw, 180px);
+      line-height: .9;
+      color: #E5C9ED;
+      letter-spacing: -.06em;
+    }
+
+    .heritage-caption {
+      max-width: 310px;
+      color: #F4EDF6;
+      font-size: 17px;
+      margin-bottom: 12px;
+    }
+
+    /* Campuses */
+
+    .campuses-layout {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 25px;
+    }
+
+    .campus {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 350px;
+      background: var(--color-background-alt);
+      overflow: hidden;
+    }
+
+    .campus-image {
+      min-height: 350px;
+    }
+
+    .campus-info {
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .campus-info span {
+      color: var(--color-primary);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      font-size: 15px;
+    }
+
+    .campus-info h3 {
+      margin: 12px 0;
+    }
+
+    .campus-info p {
+      font-size: 16px;
+    }
+
+    .campus-info a {
+      color: var(--color-primary);
+      font-weight: 700;
+      margin-top: 20px;
+      font-size: 15px;
+    }
+
+    /* Final CTA */
+
+    .final-cta {
+      background: #F0E9F3;
+      padding-block: 85px;
+    }
+
+    .final-cta-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 35px;
+    }
+
+    .final-cta h2 {
+      max-width: 690px;
+    }
+
+    .final-cta p {
+      margin-top: 15px;
+      max-width: 620px;
+    }
+
+    .final-cta-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 13px;
+      flex-shrink: 0;
+    }
+
+    /* Footer */
+
+    footer {
+      background: #252029;
+      color: #EAE4ED;
+      padding: 70px 0 100px;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.3fr 1fr 1fr 1fr;
+      gap: 40px;
+    }
+
+    .footer-brand .brand-name {
+      color: white;
+    }
+
+    .footer-brand p {
+      color: #C7BFCB;
+      font-size: 16px;
+      margin-top: 22px;
+      max-width: 300px;
+    }
+
+    footer h3 {
+      font-family: var(--font-body);
+      color: white;
+      font-size: 17px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .footer-links {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 12px;
+    }
+
+    .footer-links a {
+      color: #D5CCD9;
+      font-size: 15px;
+      transition: color .2s;
+    }
+
+    .footer-links a:hover {
+      color: white;
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,.18);
+      padding-top: 23px;
+      margin-top: 50px;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 15px;
+      font-size: 15px;
+      color: #C7BFCB;
+    }
+
+    /* Mobile sticky CTA - exactly two buttons */
+
+    .mobile-cta {
+      display: none;
+    }
+
+    /* Reveal effects */
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity .7s ease, transform .7s ease;
+    }
+
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Responsive */
+
+    @media (max-width: 1100px) {
+      .desktop-nav {
+        gap: 13px;
+      }
+
+      .desktop-nav a {
+        font-size: 14px;
+      }
+
+      .education-layout,
+      .routes-layout,
+      .research-layout {
+        gap: 40px;
+      }
+
+      .pathways-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .clinical-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .clinical-item:first-child {
+        grid-column: span 2;
+      }
+
+      .campus {
+        grid-template-columns: 1fr;
+      }
+
+      .campus-image {
+        height: 240px;
+        min-height: 240px;
+      }
+    }
+
+    @media (max-width: 850px) {
+      :root {
+        --section-space: 75px;
+      }
+
+      .desktop-nav,
+      .header-cta {
+        display: none;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .education-layout,
+      .routes-layout,
+      .research-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .education-visual {
+        min-height: 500px;
+      }
+
+      .routes-visual {
+        min-height: 450px;
+      }
+
+      .research-image {
+        height: 420px;
+      }
+
+      .clinical-top {
+        display: block;
+      }
+
+      .clinical-top .btn {
+        margin: 0 0 30px;
+      }
+
+      .campuses-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .final-cta-inner {
+        display: block;
+      }
+
+      .final-cta-actions {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: 25px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      :root {
+        --section-space: 58px;
+      }
+
+      body {
+        padding-bottom: 83px;
+      }
+
+      .container {
+        width: calc(100% - 30px);
+      }
+
+      .topbar-inner {
+        min-height: 37px;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .topbar-inner > span:last-child {
+        display: none;
+      }
+
+      .header-inner {
+        min-height: 76px;
+      }
+
+      .brand-symbol {
+        width: 42px;
+        height: 42px;
+        font-size: 25px;
+      }
+
+      .brand-name {
+        font-size: 17px;
+      }
+
+      .brand-name small {
+        font-size: 11px;
+      }
+
+      .mobile-menu {
+        inset: 113px 0 0;
+      }
+
+      .hero {
+        min-height: 650px;
+      }
+
+      .hero::before {
+        background:
+          linear-gradient(90deg, rgba(43,20,55,.95), rgba(43,20,55,.65)),
+          url("https://images.unsplash.com/photo-1576201836106-db1758fd1c97?auto=format&fit=crop&w=1000&q=80") center / cover;
+      }
+
+      .hero-content {
+        padding-block: 75px;
+      }
+
+      h1 {
+        font-size: clamp(43px, 12vw, 55px);
+      }
+
+      h2 {
+        font-size: 38px;
+      }
+
+      .hero-copy {
+        font-size: 17px;
+      }
+
+      .hero-actions {
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .hero-actions .btn {
+        width: 100%;
+      }
+
+      .pathways {
+        padding-block: 55px;
+      }
+
+      .pathways-heading {
+        display: block;
+      }
+
+      .pathways-heading p {
+        margin-top: 16px;
+      }
+
+      .pathways-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 12px;
+      }
+
+      .pathway {
+        min-height: 225px;
+        padding: 20px 16px;
+      }
+
+      .pathway h3 {
+        font-size: 21px;
+      }
+
+      .pathway p {
+        font-size: 15px;
+      }
+
+      .education-visual {
+        min-height: 390px;
+      }
+
+      .education-main-image {
+        inset: 0 35px 65px 0;
+      }
+
+      .education-accent {
+        width: 65%;
+        padding: 18px;
+      }
+
+      .education-accent strong {
+        font-size: 34px;
+      }
+
+      .education-list {
+        grid-template-columns: 1fr;
+      }
+
+      .clinical-grid {
+        grid-template-columns: 1fr;
+        gap: 14px;
+        margin-top: 35px;
+      }
+
+      .clinical-item,
+      .clinical-item:first-child {
+        grid-column: auto;
+        min-height: 330px;
+      }
+
+      .routes-visual {
+        min-height: 390px;
+      }
+
+      .routes-visual img {
+        inset: 0 0 50px 20px;
+        width: calc(100% - 20px);
+        height: calc(100% - 50px);
+      }
+
+      .routes-note {
+        width: 75%;
+        padding: 18px;
+      }
+
+      .research-image {
+        height: 360px;
+        margin-right: 12px;
+      }
+
+      .research-stamp {
+        width: 125px;
+        height: 125px;
+        right: -12px;
+      }
+
+      .research-stamp strong {
+        font-size: 33px;
+      }
+
+      .icon-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px 14px;
+      }
+
+      .icon-item {
+        padding: 18px 5px;
+      }
+
+      .icon-item h3 {
+        font-size: 22px;
+      }
+
+      .icon-item p {
+        font-size: 15px;
+      }
+
+      .icon-visual {
+        width: 64px;
+        height: 64px;
+      }
+
+      .heritage-bottom {
+        display: block;
+        margin-top: 35px;
+      }
+
+      .heritage-year {
+        font-size: 110px;
+      }
+
+      .heritage-caption {
+        margin-top: 20px;
+      }
+
+      .campus {
+        grid-template-columns: 1fr;
+      }
+
+      .campus-image {
+        height: 220px;
+        min-height: 220px;
+      }
+
+      .campus-info {
+        padding: 23px;
+      }
+
+      .final-cta {
+        padding-block: 60px;
+      }
+
+      .final-cta-actions {
+        flex-direction: column;
+      }
+
+      .final-cta-actions .btn {
+        width: 100%;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px 20px;
+      }
+
+      .footer-brand {
+        grid-column: span 2;
+      }
+
+      .footer-bottom {
+        display: block;
+      }
+
+      .footer-bottom span {
+        display: block;
+        margin-bottom: 9px;
+      }
+
+      /* Exactly two mobile CTA buttons */
+
+      .mobile-cta {
+        position: fixed;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 9px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1100;
+        padding: 11px 12px calc(11px + env(safe-area-inset-bottom));
+        background: rgba(255,255,255,.97);
+        border-top: 1px solid var(--color-border);
+        box-shadow: 0 -8px 25px rgba(30,20,35,.10);
+      }
+
+      .mobile-cta a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 53px;
+        padding: 10px 6px;
+        border-radius: 4px;
+        background: var(--color-primary);
+        color: white;
+        font-size: 15px;
+        font-weight: 700;
+        text-align: center;
+      }
+
+      .mobile-cta a:first-child {
+        background: var(--color-primary-dark);
+      }
+
+      .mobile-cta a:active {
+        background: var(--color-hover);
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *,
+      *::before,
+      *::after {
+        scroll-behavior: auto !important;
+        animation-duration: .01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: .01ms !important;
+      }
+
+      .reveal {
+        opacity: 1;
+        transform: none;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollegeOrUniversity",
+    "name": "Royal Veterinary College",
+    "alternateName": "RVC",
+    "url": "https://www.rvc.ac.uk/",
+    "foundingDate": "1791",
+    "parentOrganization": {
+      "@type": "Organization",
+      "name": "University of London",
+      "url": "https://www.london.ac.uk/"
+    },
+    "address": [
+      {
+        "@type": "PostalAddress",
+        "streetAddress": "Royal College Street",
+        "addressLocality": "London",
+        "postalCode": "NW1 0TU",
+        "addressCountry": "GB"
+      },
+      {
+        "@type": "PostalAddress",
+        "streetAddress": "Hawkshead Lane, North Mymms",
+        "addressLocality": "Hatfield",
+        "postalCode": "AL9 7TA",
+        "addressCountry": "GB"
+      }
+    ],
+    "telephone": [
+      "+44 20 7468 5000",
+      "+44 1707 666333"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- Announcement bar -->
+
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <span>Discover veterinary education, science and animal care.</span>
+      <span><a href="https://www.rvc.ac.uk/study">Explore RVC programmes ↗</a></span>
+    </div>
+  </div>
+
+  <!-- Header -->
+
+  <header class="site-header">
+    <div class="container header-inner">
+
+      <a class="brand" href="#home" aria-label="Royal Veterinary College home">
+        <span class="brand-symbol">R</span>
+        <span class="brand-name">
+          Royal Veterinary College
+          <small>University of London</small>
+        </span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="#study">Study</a>
+        <a href="#clinical">Veterinary Care</a>
+        <a href="#research">Research</a>
+        <a href="#about">About RVC</a>
+        <a href="#campuses">Campuses</a>
+      </nav>
+
+      <a href="#pathways" class="btn btn-primary header-cta">
+        Explore the RVC ↗
+      </a>
+
+      <button class="menu-toggle"
+        aria-label="Open navigation"
+        aria-expanded="false"
+        aria-controls="mobileMenu">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+    <a href="#study">Study at RVC</a>
+    <a href="#clinical">Veterinary Care</a>
+    <a href="#research">Research & Innovation</a>
+    <a href="#pathways">Who We Support</a>
+    <a href="#about">About RVC</a>
+    <a href="#campuses">Our Campuses</a>
+  </nav>
+
+  <main id="home">
+
+    <!-- Hero -->
+
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content reveal">
+
+          <div class="eyebrow">The Royal Veterinary College</div>
+
+          <h1>
+            Advancing animal health through
+            <em>science, education and care.</em>
+          </h1>
+
+          <p class="hero-copy">
+            A connected world of veterinary learning, clinical expertise
+            and scientific discovery. Explore how the RVC brings people,
+            animals and research together.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#study" class="btn btn-light">
+              Discover our courses →
+            </a>
+
+            <a href="#clinical" class="btn btn-outline"
+              style="border-color:rgba(255,255,255,.7);color:white">
+              Explore veterinary care →
+            </a>
+          </div>
+
+          <div class="hero-note">
+            <span></span>
+            Established in 1791 · University of London
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Audience pathways -->
+
+    <section class="pathways" id="pathways">
+      <div class="container">
+
+        <div class="pathways-heading reveal">
+          <h2>A place for every part of the animal health community.</h2>
+          <p>
+            Whether you are preparing for a veterinary career, seeking
+            specialist care or advancing scientific knowledge,
+            discover where your RVC journey begins.
+          </p>
+        </div>
+
+        <div class="pathways-grid">
+
+          <a href="#study" class="pathway reveal">
+            <div class="pathway-number">01</div>
+            <h3>Future students</h3>
+            <p>Explore veterinary, nursing and biological science programmes.</p>
+            <span class="pathway-arrow">↗</span>
+          </a>
+
+          <a href="#clinical" class="pathway reveal">
+            <div class="pathway-number">02</div>
+            <h3>Animal owners</h3>
+            <p>Find the appropriate RVC veterinary hospital or practice.</p>
+            <span class="pathway-arrow">↗</span>
+          </a>
+
+          <a href="#clinical" class="pathway reveal">
+            <div class="pathway-number">03</div>
+            <h3>Veterinary professionals</h3>
+            <p>Discover referral services, clinical expertise and CPD.</p>
+            <span class="pathway-arrow">↗</span>
+          </a>
+
+          <a href="#research" class="pathway reveal">
+            <div class="pathway-number">04</div>
+            <h3>Researchers & partners</h3>
+            <p>Explore research, scientific collaboration and innovation.</p>
+            <span class="pathway-arrow">↗</span>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+
+    <section class="section" id="study">
+      <div class="container education-layout">
+
+        <div class="education-visual reveal">
+          <div class="education-main-image">
+            <img
+              src="https://images.unsplash.com/photo-1532938911079-1b06ac7ceec7?auto=format&fit=crop&w=1100&q=85"
+              alt="Healthcare and clinical learning environment"
+              loading="lazy">
+          </div>
+
+          <div class="education-accent">
+            <strong>1791</strong>
+            <span>Beginning a legacy of veterinary education.</span>
+          </div>
+        </div>
+
+        <div class="education-copy reveal">
+          <div class="eyebrow">Education at the RVC</div>
+
+          <h2>Build a future in animal health and biological science.</h2>
+
+          <p class="lead">
+            Education at the RVC connects scientific understanding
+            with practical learning, clinical experience and the
+            wider responsibilities of animal health and welfare.
+          </p>
+
+          <p>
+            Explore programmes designed for different interests,
+            academic backgrounds and professional ambitions.
+          </p>
+
+          <ul class="education-list">
+            <li>Veterinary Medicine</li>
+            <li>Veterinary Nursing</li>
+            <li>Biological Sciences</li>
+            <li>Postgraduate Study</li>
+            <li>Research Degrees</li>
+            <li>Continuing Professional Development</li>
+          </ul>
+
+          <a class="btn btn-primary"
+            href="https://www.rvc.ac.uk/study">
+            Explore study programmes →
+          </a>
+
+          <a class="text-link"
+            href="https://www.rvc.ac.uk/study/undergraduate">
+            Undergraduate programmes <span>↗</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Clinical services -->
+
+    <section class="section clinical" id="clinical">
+      <div class="container">
+
+        <div class="clinical-top reveal">
+          <div class="section-intro">
+            <div class="eyebrow">Clinical expertise</div>
+
+            <h2>Specialist veterinary care, connected to education and research.</h2>
+
+            <p class="lead">
+              The RVC's veterinary hospitals and practices provide
+              animal healthcare while supporting the education
+              and development of future veterinary professionals.
+            </p>
+          </div>
+
+          <a class="btn btn-light"
+            href="https://www.rvc.ac.uk/small-animal-vet">
+            Explore clinical services →
+          </a>
+        </div>
+
+        <div class="clinical-grid">
+
+          <article class="clinical-item">
+            <span>01 / Small animal care</span>
+            <h3>Queen Mother Hospital for Animals</h3>
+            <p>
+              Specialist small animal referral services and
+              emergency veterinary facilities in Hertfordshire.
+            </p>
+            <a href="https://www.rvc.ac.uk/small-animal-vet/specialist-referrals">
+              Explore specialist care →
+            </a>
+          </article>
+
+          <article class="clinical-item">
+            <span>02 / General practice</span>
+            <h3>Beaumont Sainsbury Animal Hospital</h3>
+            <p>
+              Veterinary services for pet owners in the Camden
+              community.
+            </p>
+            <a href="https://www.rvc.ac.uk/small-animal-vet/general-practice">
+              Explore the practice →
+            </a>
+          </article>
+
+          <article class="clinical-item">
+            <span>03 / Equine medicine</span>
+            <h3>RVC Equine</h3>
+            <p>
+              Equine veterinary services and specialist
+              clinical expertise.
+            </p>
+            <a href="https://www.rvc.ac.uk/equine-vet">
+              Explore equine services →
+            </a>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Audience-specific routes -->
+
+    <section class="section routes">
+      <div class="container routes-layout">
+
+        <div class="routes-copy reveal">
+          <div class="eyebrow">Find the right destination</div>
+
+          <h2>Clear pathways to the right expertise.</h2>
+
+          <p class="lead">
+            Different visitors have different requirements.
+            Start with the service or opportunity relevant to you.
+          </p>
+
+          <p>
+            The RVC brings together general practice, specialist
+            referral care, veterinary education and research.
+            Each pathway should make its next step clear.
+          </p>
+
+          <div class="route-list">
+
+            <a class="route-row"
+              href="https://www.rvc.ac.uk/small-animal-vet/general-practice">
+              <div>
+                <strong>Pet owners</strong>
+                <span>General veterinary services</span>
+              </div>
+              <b>↗</b>
+            </a>
+
+            <a class="route-row"
+              href="https://www.rvc.ac.uk/small-animal-vet/specialist-referrals">
+              <div>
+                <strong>Referring vets</strong>
+                <span>Specialist referral information</span>
+              </div>
+              <b>↗</b>
+            </a>
+
+            <a class="route-row"
+              href="https://www.rvc.ac.uk/study">
+              <div>
+                <strong>Prospective students</strong>
+                <span>Course discovery and admissions</span>
+              </div>
+              <b>↗</b>
+            </a>
+
+            <a class="route-row"
+              href="https://www.rvc.ac.uk/research">
+              <div>
+                <strong>Research partners</strong>
+                <span>Research and collaboration</span>
+              </div>
+              <b>↗</b>
+            </a>
+
+          </div>
+        </div>
+
+        <div class="routes-visual reveal">
+          <img
+            src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?auto=format&fit=crop&w=1100&q=85"
+            alt="Dog receiving attentive veterinary care"
+            loading="lazy">
+
+          <div class="routes-note">
+            <strong>People. Animals. Discovery.</strong>
+            <p>
+              Bringing different parts of the veterinary
+              community together.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Research -->
+
+    <section class="section research" id="research">
+      <div class="container research-layout">
+
+        <div class="research-image reveal">
+          <img
+            src="https://images.unsplash.com/photo-1579154204601-01588f351e67?auto=format&fit=crop&w=1100&q=85"
+            alt="Scientific research laboratory environment"
+            loading="lazy">
+
+          <div class="research-stamp">
+            <strong>88%</strong>
+            <span>Research rated internationally excellent or world class in REF 2021</span>
+          </div>
+        </div>
+
+        <div class="research-copy reveal">
+          <div class="eyebrow">Research & innovation</div>
+
+          <h2>Scientific discovery with a wider purpose.</h2>
+
+          <p class="lead">
+            Veterinary and biological science research helps
+            advance understanding of animal health, disease,
+            welfare and the connections between human and animal health.
+          </p>
+
+          <p>
+            The RVC combines research expertise with clinical
+            environments, education and external collaboration.
+          </p>
+
+          <div class="research-topics">
+            <span>Animal Health</span>
+            <span>One Health</span>
+            <span>Biomedical Science</span>
+            <span>Veterinary Research</span>
+            <span>Innovation</span>
+          </div>
+
+          <a href="https://www.rvc.ac.uk/research"
+            class="btn btn-primary">
+            Discover RVC research →
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Six custom SVG icons: exactly 3 + 3 -->
+
+    <section class="section capabilities">
+      <div class="container">
+
+        <div class="section-intro reveal">
+          <div class="eyebrow">The RVC ecosystem</div>
+          <h2>Where veterinary knowledge meets practical impact.</h2>
+          <p>
+            Six connected areas demonstrate the breadth of
+            veterinary and biological sciences at the RVC.
+          </p>
+        </div>
+
+        <!-- First row: 3 icons -->
+
+        <div class="icon-grid">
+
+          <article class="icon-item reveal">
+            <div class="icon-visual">
+              <svg viewBox="0 0 48 48" aria-hidden="true">
+                <path d="M10 38V17l14-9 14 9v21"/>
+                <path d="M17 38V25h14v13"/>
+                <path d="M20 17h8M24 13v8"/>
+                <path d="M7 38h34"/>
+              </svg>
+            </div>
+            <h3>Veterinary Education</h3>
+            <p>
+              Scientific and clinical learning for future
+              veterinary professionals.
+            </p>
+          </article>
+
+          <article class="icon-item reveal">
+            <div class="icon-visual">
+              <svg viewBox="0 0 48 48" aria-hidden="true">
+                <path d="M24 39S7 29 7 18a9 9 0 0 1 17-4 9 9 0 0 1 17 4c0 11-17 21-17 21Z"/>
+                <path d="M10 24h9l4-7 5 14 4-7h6"/>
+              </svg>
+            </div>
+            <h3>Animal Healthcare</h3>
+            <p>
+              Clinical environments supporting animal
+              health and welfare.
+            </p>
+          </article>
+
+          <article class="icon-item reveal">
+            <div class="icon-visual">
+              <svg viewBox="0 0 48 48" aria-hidden="true">
+                <path d="M18 8h12M21 8v13L11 37a3 3 0 0 0 3 4h20a3 3 0 0 0 3-4L27 21V8"/>
+                <path d="M15 32h18M20 27h8"/>
+                <circle cx="21" cy="35" r="1"/>
+                <circle cx="29" cy="31" r="1"/>
+              </svg>
+            </div>
+            <h3>Scientific Research</h3>
+            <p>
+              Research to improve understanding of animal
+              and biological health.
+            </p>
+          </article>
+
+          <!-- Second row: 3 icons -->
+
+          <article class="icon-item reveal">
+            <div class="icon-visual">
+              <svg viewBox="0 0 48 48" aria-hidden="true">
+                <path d="M7 24c4-9 10-13 17-13s13 4 17 13c-4 9-10 13-17 13S11 33 7 24Z"/>
+                <circle cx="24" cy="24" r="6"/>
+                <circle cx="24" cy="24" r="2"/>
+              </svg>
+            </div>
+            <h3>Animal Welfare</h3>
+            <p>
+              Advancing responsible animal care and
+              welfare through knowledge.
+            </p>
+          </article>
+
+          <article class="icon-item reveal">
+            <div class="icon-visual">
+              <svg viewBox="0 0 48 48" aria-hidden="true">
+                <circle cx="24" cy="24" r="16"/>
+                <circle cx="24" cy="24" r="8"/>
+                <path d="M24 3v7M24 38v7M3 24h7M38 24h7"/>
+                <path d="m20 24 3 3 6-7"/>
+              </svg>
+            </div>
+            <h3>Clinical Expertise</h3>
+            <p>
+              Specialist knowledge and clinical practice
+              supporting veterinary care.
+            </p>
+          </article>
+
+          <article class="icon-item reveal">
+            <div class="icon-visual">
+              <svg viewBox="0 0 48 48" aria-hidden="true">
+                <circle cx="15" cy="16" r="6"/>
+                <circle cx="33" cy="16" r="6"/>
+                <path d="M4 39c0-8 4-12 11-12s11 4 11 12"/>
+                <path d="M22 39c0-8 4-12 11-12s11 4 11 12"/>
+                <path d="M21 17h6"/>
+              </svg>
+            </div>
+            <h3>Professional Community</h3>
+            <p>
+              Supporting students, veterinary teams
+              and research partners.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Institutional heritage -->
+
+    <section class="section heritage" id="about">
+      <div class="container">
+
+        <div class="eyebrow">Our institutional heritage</div>
+
+        <h2>A history of veterinary education. A future of discovery.</h2>
+
+        <p class="heritage-lead">
+          Established in 1791, the Royal Veterinary College
+          has developed into a specialist institution connecting
+          veterinary education, clinical services and research.
+        </p>
+
+        <div class="heritage-bottom">
+
+          <div class="heritage-year">1791</div>
+
+          <div class="heritage-caption">
+            From its foundation to today's international
+            veterinary and biological sciences community.
+            <br><br>
+            <a href="https://www.rvc.ac.uk/about/the-rvc"
+              class="btn btn-light">
+              Discover our history →
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Campuses -->
+
+    <section class="section" id="campuses">
+      <div class="container">
+
+        <div class="section-intro reveal">
+          <div class="eyebrow">Our locations</div>
+          <h2>Two campuses. One connected community.</h2>
+          <p>
+            The RVC's principal campuses bring together
+            teaching, research and clinical environments
+            in London and Hertfordshire.
+          </p>
+        </div>
+
+        <div class="campuses-layout">
+
+          <article class="campus reveal">
+            <div class="campus-image">
+              <img
+                src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=900&q=85"
+                alt="University campus architecture"
+                loading="lazy">
+            </div>
+
+            <div class="campus-info">
+              <span>London</span>
+              <h3>Camden Campus</h3>
+              <p>
+                Royal College Street,
+                London NW1 0TU,
+                United Kingdom.
+              </p>
+              <a href="https://www.rvc.ac.uk/about/our-campuses">
+                Campus information ↗
+              </a>
+            </div>
+          </article>
+
+          <article class="campus reveal">
+            <div class="campus-image">
+              <img
+                src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=900&q=85"
+                alt="Green countryside campus environment"
+                loading="lazy">
+            </div>
+
+            <div class="campus-info">
+              <span>Hertfordshire</span>
+              <h3>Hawkshead Campus</h3>
+              <p>
+                Hawkshead Lane, North Mymms,
+                Hatfield AL9 7TA,
+                United Kingdom.
+              </p>
+              <a href="https://www.rvc.ac.uk/about/our-campuses">
+                Campus information ↗
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Final CTA -->
+
+    <section class="final-cta">
+      <div class="container final-cta-inner">
+
+        <div>
+          <div class="eyebrow">Explore your RVC journey</div>
+
+          <h2>Discover where science, animal health and opportunity meet.</h2>
+
+          <p>
+            Find the programme, clinical service or research
+            opportunity that connects with your goals.
+          </p>
+        </div>
+
+        <div class="final-cta-actions">
+          <a href="https://www.rvc.ac.uk/study"
+            class="btn btn-primary">
+            Explore courses →
+          </a>
+
+          <a href="https://www.rvc.ac.uk/about/our-campuses"
+            class="btn btn-outline">
+            Contact and locations →
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+
+  <footer>
+    <div class="container">
+
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <a class="brand" href="#home">
+            <span class="brand-symbol" style="border-color:#D6B5E1;color:#E6C9EF">
+              R
+            </span>
+            <span class="brand-name">
+              Royal Veterinary College
+              <small style="color:#D6B5E1">University of London</small>
+            </span>
+          </a>
+
+          <p>
+            Advancing animal health through veterinary
+            education, clinical expertise and research.
+          </p>
+        </div>
+
+        <div>
+          <h3>Study</h3>
+          <ul class="footer-links">
+            <li><a href="https://www.rvc.ac.uk/study/undergraduate">Undergraduate</a></li>
+            <li><a href="https://www.rvc.ac.uk/study/postgraduate">Postgraduate</a></li>
+            <li><a href="https://www.rvc.ac.uk/study">All programmes</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Veterinary Care</h3>
+          <ul class="footer-links">
+            <li><a href="https://www.rvc.ac.uk/small-animal-vet">Small animal care</a></li>
+            <li><a href="https://www.rvc.ac.uk/equine-vet">Equine services</a></li>
+            <li><a href="https://www.rvc.ac.uk/small-animal-vet/specialist-referrals">Specialist referrals</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Discover RVC</h3>
+          <ul class="footer-links">
+            <li><a href="https://www.rvc.ac.uk/about/the-rvc">About us</a></li>
+            <li><a href="https://www.rvc.ac.uk/research">Research</a></li>
+            <li><a href="https://www.rvc.ac.uk/about/our-campuses">Our campuses</a></li>
+            <li><a href="https://www.rvc.ac.uk/about/contact-us">Contact</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <span>© Royal Veterinary College, University of London.</span>
+        <span>
+          <a href="https://www.rvc.ac.uk/">Official RVC website</a>
+          &nbsp; | &nbsp;
+          <a href="https://www.rvc.ac.uk/accessibility">Accessibility</a>
+        </span>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Exactly two persistent mobile CTA buttons -->
+
+  <div class="mobile-cta" aria-label="Quick actions">
+    <a href="#study">Explore Courses</a>
+    <a href="#clinical">Veterinary Care</a>
+  </div>
+
+  <script>
+    // Accessible mobile navigation
+
+    const menuToggle = document.querySelector(".menu-toggle");
+    const mobileMenu = document.querySelector("#mobileMenu");
+    const menuLinks = mobileMenu.querySelectorAll("a");
+
+    function closeMenu() {
+      mobileMenu.classList.remove("active");
+      document.body.classList.remove("menu-open");
+      menuToggle.setAttribute("aria-expanded", "false");
+      menuToggle.setAttribute("aria-label", "Open navigation");
+      menuToggle.textContent = "☰";
+    }
+
+    menuToggle.addEventListener("click", () => {
+      const isOpen = mobileMenu.classList.toggle("active");
+
+      document.body.classList.toggle("menu-open", isOpen);
+      menuToggle.setAttribute("aria-expanded", String(isOpen));
+      menuToggle.setAttribute(
+        "aria-label",
+        isOpen ? "Close navigation" : "Open navigation"
+      );
+      menuToggle.textContent = isOpen ? "×" : "☰";
+    });
+
+    menuLinks.forEach(link => {
+      link.addEventListener("click", closeMenu);
+    });
+
+    document.addEventListener("keydown", event => {
+      if (event.key === "Escape") closeMenu();
+    });
+
+    // Scroll reveal animation with graceful fallback
+
+    const revealElements = document.querySelectorAll(".reveal");
+
+    if ("IntersectionObserver" in window) {
+      const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            obs.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.12
+      });
+
+      revealElements.forEach(element => observer.observe(element));
+    } else {
+      revealElements.forEach(element => element.classList.add("visible"));
+    }
+
+    // Prevent menu remaining open when returning to desktop
+
+    window.addEventListener("resize", () => {
+      if (window.innerWidth > 850) closeMenu();
+    });
+  </script>
+
+</body>
+</html>
